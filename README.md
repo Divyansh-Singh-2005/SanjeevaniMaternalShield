@@ -35,18 +35,7 @@ Sanjeevani Maternal Shield bridges this gap by combining **Machine Learning + Ge
 
 ---
 
-## 🧠 System Architecture
-
-```mermaid
-graph TD
-    A[Patient Vitals] --> B[XGBoost Risk Prediction Model]
-    B --> C[Probability-Based Risk Logic]
-    C --> D[Clinical Explanation Engine]
-    D --> E[Hindi Text + Offline Voice]
-    E --> F[Frontline Health Worker Action]
-(If the diagram above does not render, the flow is: Patient Vitals → XGBoost Model → Risk Logic → Explanation Engine → Hindi Voice → ASHA Worker Action)
-
-🔬 Model & Methodology
+## 🔬 Model & Methodology
 Model: XGBoost (multi-class classification)
 
 Evaluation: Stratified 5-Fold Cross Validation
@@ -79,7 +68,7 @@ High Risk
 
 ⚠️ Note: In healthcare, reducing false negatives for high-risk cases is prioritized over raw accuracy.
 
-🧬 GenAI Explanation Layer (Core Innovation)
+## 🧬 GenAI Explanation Layer (Core Innovation)
 Instead of raw predictions, the system generates:
 
 Human-readable clinical explanations
@@ -90,7 +79,7 @@ Deterministic outputs (no hallucinated advice)
 
 This ensures: Transparency, Trust, Safety, and Regulatory friendliness.
 
-🌍 Multilingual & Offline Support
+## 🌍 Multilingual & Offline Support
 Hindi clinical explanations
 
 Offline text-to-speech (no internet required)
@@ -99,7 +88,7 @@ Graceful fallback if regional voices are unavailable
 
 Designed specifically for ASHA workers
 
-🖥 Deployment Available Interfaces
+## 🖥 Deployment Available Interfaces
 Streamlit App (mobile & tablet friendly)
 
 FastAPI Backend (scalable deployment)
@@ -111,7 +100,8 @@ Bash
 
 pip install -r requirements.txt
 streamlit run app.py
-🛠 Tech Stack
+
+## 🛠 Tech Stack
 Python
 
 XGBoost
@@ -126,7 +116,7 @@ pyttsx3 (offline voice)
 
 Joblib
 
-📈 Impact
+## 📈 Impact
 Early identification of maternal risk
 
 Reduced dependency on immediate doctor availability
@@ -137,8 +127,8 @@ Scalable to rural and low-resource settings
 
 Directly aligned with UN SDG 3.1 – Reducing Maternal Mortality
 
-👤 Author
+## 👤 Author
 Divyansh Singh Aspiring AI/ML Engineer | Focused on building real-world, impact-driven AI systems
 
-📌 Note for Reviewers
+## 📌 Note for Reviewers
 This project prioritizes clinical safety, interpretability, and deployability over leaderboard-style optimization, reflecting real-world healthcare AI constraints.
